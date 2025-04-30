@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common Menu Link Style */
+
+  
+ 
+  .menu-item {
+    @apply flex-1 text-center text-gray-300 hover:text-orange-500 hover:border-b-2 hover:border-b-orange-500 transition-all duration-300;
+    @apply border-r border-gray-500 py-2;
+  }
+  
+  .menu-item:last-child {
+    @apply border-r-0; /* Last item won't have the right border */
+  }
+  
+
+  .icon{
+    @apply w-8 h-8 grayscale hover:grayscale-0 transition-all duration-300;
+  }
+
+
+/* src/styles/global.css */
+@keyframes marquee {
+    0% {
+      transform: translateX(200%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+  }
+  
+
+
+
